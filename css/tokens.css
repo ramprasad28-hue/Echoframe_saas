@@ -1,0 +1,116 @@
+/* ==========================================================================
+   EchoFrame Design Tokens
+   Primitive tokens -> Semantic tokens. Components should only ever
+   reference semantic tokens (the second block), never primitives directly.
+   ========================================================================== */
+
+:root {
+  /* ---- Primitive color tokens ---- */
+  --ink-black: #0A0A0B;
+  --graphite: #1C1D1F;
+  --graphite-2: #262729;
+  --slate: #6B6D76;
+  --slate-2: #8E9099;
+  --mist: #E7E8EC;
+  --mist-2: #F1F2F5;
+  --paper-white: #FAFAFA;
+  --white: #FFFFFF;
+
+  --signal-indigo: #4F5DFF;
+  --signal-indigo-strong: #3C48D6;
+  --signal-green: #1FAE6B;
+  --signal-amber: #E8A23D;
+  --signal-red: #E5484D;
+
+  /* ---- Primitive type tokens ---- */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --fs-display: clamp(2.75rem, 5vw, 4.5rem);
+  --fs-h1: 1.75rem;
+  --fs-h2: 1.25rem;
+  --fs-h3: 1rem;
+  --fs-body: 0.9375rem;
+  --fs-meta: 0.8125rem;
+  --fs-stat: 2rem;
+
+  --lh-tight: 1.1;
+  --lh-heading: 1.25;
+  --lh-body: 1.6;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+
+  /* ---- Primitive spacing scale (8px grid, 4px half-step) ---- */
+  --space-05: 0.25rem; /* 4px  */
+  --space-1:  0.5rem;  /* 8px  */
+  --space-2:  1rem;    /* 16px */
+  --space-3:  1.5rem;  /* 24px */
+  --space-4:  2rem;    /* 32px */
+  --space-6:  3rem;    /* 48px */
+  --space-8:  4rem;    /* 64px */
+  --space-12: 6rem;    /* 96px */
+  --space-16: 8rem;    /* 128px */
+
+  /* ---- Primitive radius scale ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-full: 999px;
+
+  /* ---- Primitive shadow scale ---- */
+  --shadow-none: none;
+  --shadow-raised: 0 4px 16px rgba(10, 10, 11, 0.08);
+  --shadow-overlay: 0 16px 48px rgba(10, 10, 11, 0.18);
+
+  /* ---- Primitive motion scale ---- */
+  --duration-micro: 140ms;
+  --duration-panel: 280ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+
+  /* ---- Breakpoints (reference only; used in media queries directly) ---- */
+  --bp-tablet: 768px;
+  --bp-laptop: 1024px;
+  --bp-desktop: 1280px;
+
+  /* ---- Semantic tokens: LIGHT THEME (marketing default) ---- */
+  --color-bg: var(--paper-white);
+  --color-bg-elevated: var(--white);
+  --color-surface: var(--white);
+  --color-surface-sunken: var(--mist-2);
+  --color-border: var(--mist);
+  --color-border-strong: #D7D9DE;
+  --color-text-primary: var(--ink-black);
+  --color-text-secondary: var(--slate);
+  --color-text-on-accent: var(--white);
+  --color-accent: var(--signal-indigo);
+  --color-accent-strong: var(--signal-indigo-strong);
+  --color-status-positive: var(--signal-green);
+  --color-status-warning: var(--signal-amber);
+  --color-status-negative: var(--signal-red);
+  --shadow-elevated: var(--shadow-raised);
+}
+
+/* ---- Semantic tokens: DARK THEME (product app default) ---- */
+[data-theme="dark"] {
+  --color-bg: var(--ink-black);
+  --color-bg-elevated: var(--graphite);
+  --color-surface: var(--graphite);
+  --color-surface-sunken: var(--graphite-2);
+  --color-border: #2C2D30;
+  --color-border-strong: #3A3B3F;
+  --color-text-primary: #F2F2F4;
+  --color-text-secondary: var(--slate-2);
+  --color-text-on-accent: var(--white);
+  --color-accent: #6C77FF;
+  --color-accent-strong: #8790FF;
+  --color-status-positive: #33C37F;
+  --color-status-warning: #F0B054;
+  --color-status-negative: #F0656A;
+  --shadow-elevated: none;
+}

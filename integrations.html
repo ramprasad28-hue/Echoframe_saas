@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-default-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integrations — EchoFrame</title>
+<meta name="description" content="Connect EchoFrame to the support, sales, review, community, and survey tools you already use.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%234F5DFF%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<a class="sr-only" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container">
+    <div class="nav-left">
+      <a class="brand" href="index.html" aria-label="EchoFrame home">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none"><path d="M4 4H9M4 4V9M20 4H15M20 4V9M4 20H9M4 20V15M20 20H15M20 20V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 12C9.5 10 14.5 14 16 12" stroke="#4F5DFF" stroke-width="1.6" stroke-linecap="round"/></svg>
+        EchoFrame
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#product">Product</a>
+        <a href="integrations.html" aria-current="page">Integrations</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="index.html#customers">Customers</a>
+        <a href="#" aria-disabled="true">Changelog</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a class="btn btn-ghost btn-sm" href="login.html">Log in</a>
+      <a class="btn btn-primary btn-sm" href="signup.html">Start free trial</a>
+      <button class="nav-toggle icon-btn" data-nav-toggle aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5H17M3 10H17M3 15H17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav-header">
+    <span class="brand">EchoFrame</span>
+    <button class="icon-btn" data-nav-close aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav-links" aria-label="Mobile">
+    <a href="index.html#product">Product</a>
+    <a href="integrations.html">Integrations</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="index.html#customers">Customers</a>
+  </nav>
+  <div class="mobile-nav-footer">
+    <a class="btn btn-secondary btn-block" href="login.html">Log in</a>
+    <a class="btn btn-primary btn-block" href="signup.html">Start free trial</a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="section container text-center">
+    <span class="eyebrow">Integrations</span>
+    <h1 style="font-size:2.25rem; max-width:600px; margin:0 auto var(--space-2);">Connect the tools you already use.</h1>
+    <p style="max-width:480px; margin:0 auto;">EchoFrame ingests feedback from support, sales, reviews, community, and survey tools — normalized into one taxonomy the moment it arrives.</p>
+  </section>
+
+  <section class="container section-tight">
+    <div class="filter-row" role="group" aria-label="Filter integrations by category">
+      <button class="btn btn-sm btn-primary" data-filter="all" aria-pressed="true">All</button>
+      <button class="btn btn-sm btn-secondary" data-filter="support" aria-pressed="false">Support</button>
+      <button class="btn btn-sm btn-secondary" data-filter="sales" aria-pressed="false">Sales</button>
+      <button class="btn btn-sm btn-secondary" data-filter="reviews" aria-pressed="false">Reviews</button>
+      <button class="btn btn-sm btn-secondary" data-filter="community" aria-pressed="false">Community</button>
+      <button class="btn btn-sm btn-secondary" data-filter="survey" aria-pressed="false">Survey</button>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card integration-card" data-category="support">
+        <div class="integration-mark" style="background:#03363D;">ZD</div>
+        <div>
+          <p class="integration-name">Zendesk</p>
+          <p class="integration-desc text-secondary">Sync every ticket and reply into your Inbox in real time.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+      <div class="card integration-card" data-category="support">
+        <div class="integration-mark" style="background:#1F8DED;">IC</div>
+        <div>
+          <p class="integration-name">Intercom</p>
+          <p class="integration-desc text-secondary">Bring in conversations and CSAT responses automatically.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+      <div class="card integration-card" data-category="support">
+        <div class="integration-mark" style="background:#25C16F;">FD</div>
+        <div>
+          <p class="integration-name">Freshdesk</p>
+          <p class="integration-desc text-secondary">Import tickets and satisfaction ratings.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+
+      <div class="card integration-card" data-category="sales">
+        <div class="integration-mark" style="background:#6F42F5;">GG</div>
+        <div>
+          <p class="integration-name">Gong</p>
+          <p class="integration-desc text-secondary">Turn sales call transcripts into structured feedback.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+      <div class="card integration-card" data-category="sales">
+        <div class="integration-mark" style="background:#00A1E0;">SF</div>
+        <div>
+          <p class="integration-name">Salesforce</p>
+          <p class="integration-desc text-secondary">Attach account value and stage to every feedback item.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+      <div class="card integration-card" data-category="sales">
+        <div class="integration-mark" style="background:#5B57D1;">CH</div>
+        <div>
+          <p class="integration-name">Chorus</p>
+          <p class="integration-desc text-secondary">Capture call-based feedback alongside Gong.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+
+      <div class="card integration-card" data-category="reviews">
+        <div class="integration-mark" style="background:#FF492C;">G2</div>
+        <div>
+          <p class="integration-name">G2</p>
+          <p class="integration-desc text-secondary">Pull in new reviews and star ratings as they post.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+      <div class="card integration-card" data-category="reviews">
+        <div class="integration-mark" style="background:#0D96F6;">AS</div>
+        <div>
+          <p class="integration-name">App Store</p>
+          <p class="integration-desc text-secondary">Ingest reviews from iOS and Android storefronts.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+
+      <div class="card integration-card" data-category="community">
+        <div class="integration-mark" style="background:#4A154B;">SL</div>
+        <div>
+          <p class="integration-name">Slack</p>
+          <p class="integration-desc text-secondary">Track feedback shared in customer and community channels.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+
+      <div class="card integration-card" data-category="survey">
+        <div class="integration-mark" style="background:#FF6154;">TF</div>
+        <div>
+          <p class="integration-name">Typeform</p>
+          <p class="integration-desc text-secondary">Fold survey responses directly into your themes.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+      <div class="card integration-card" data-category="survey">
+        <div class="integration-mark" style="background:#0B5FFF;">DL</div>
+        <div>
+          <p class="integration-name">Delighted</p>
+          <p class="integration-desc text-secondary">Bring NPS scores and comments into the same taxonomy.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">Connect</a>
+        </div>
+      </div>
+
+      <div class="card integration-card api-card" data-category="all">
+        <div class="integration-mark" style="background:var(--color-text-primary); color:var(--color-bg);">API</div>
+        <div>
+          <p class="integration-name">Connect via API or webhook</p>
+          <p class="integration-desc text-secondary">No native integration yet? Send feedback in from any source with a simple webhook.</p>
+          <a class="btn btn-secondary btn-sm" style="margin-top:8px;" href="#">View API docs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section-tight">
+    <div class="cta-band">
+      <h2>Don't see your tool?</h2>
+      <p>Tell us what you use — we prioritize new integrations by customer demand.</p>
+      <a class="btn btn-primary" href="#">Request an integration</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span class="brand">EchoFrame</span>
+        <p class="text-secondary">Every product decision, traceable to a real customer need.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="index.html#product">Inbox</a></li>
+          <li><a href="index.html#product">Themes</a></li>
+          <li><a href="integrations.html">Integrations</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EchoFrame, Inc.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookie preferences</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

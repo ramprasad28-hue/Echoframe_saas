@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-default-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — EchoFrame</title>
+<meta name="description" content="Simple pricing that scales with your feedback volume. Starter, Growth, Scale, and Enterprise plans.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%234F5DFF%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<a class="sr-only" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container">
+    <div class="nav-left">
+      <a class="brand" href="index.html" aria-label="EchoFrame home">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none"><path d="M4 4H9M4 4V9M20 4H15M20 4V9M4 20H9M4 20V15M20 20H15M20 20V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 12C9.5 10 14.5 14 16 12" stroke="#4F5DFF" stroke-width="1.6" stroke-linecap="round"/></svg>
+        EchoFrame
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#product">Product</a>
+        <a href="integrations.html">Integrations</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a href="index.html#customers">Customers</a>
+        <a href="#" aria-disabled="true">Changelog</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a class="btn btn-ghost btn-sm" href="login.html">Log in</a>
+      <a class="btn btn-primary btn-sm" href="signup.html">Start free trial</a>
+      <button class="nav-toggle icon-btn" data-nav-toggle aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5H17M3 10H17M3 15H17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav-header">
+    <span class="brand">EchoFrame</span>
+    <button class="icon-btn" data-nav-close aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav-links" aria-label="Mobile">
+    <a href="index.html#product">Product</a>
+    <a href="integrations.html">Integrations</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="index.html#customers">Customers</a>
+  </nav>
+  <div class="mobile-nav-footer">
+    <a class="btn btn-secondary btn-block" href="login.html">Log in</a>
+    <a class="btn btn-primary btn-block" href="signup.html">Start free trial</a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="section container text-center">
+    <span class="eyebrow">Pricing</span>
+    <h1 style="font-size:2.25rem; max-width:600px; margin:0 auto var(--space-2);">Simple pricing that scales with your signal.</h1>
+    <p style="max-width:480px; margin:0 auto var(--space-4);">Every plan includes a 14-day free trial. Pricing scales with feedback volume and connected sources, not seats.</p>
+
+    <div class="billing-toggle-wrap">
+      <span class="text-meta" style="color:var(--color-text-primary); font-weight:500;">Monthly</span>
+      <label class="switch" aria-label="Toggle annual billing">
+        <input type="checkbox" data-billing-toggle>
+        <span class="switch-track"></span>
+      </label>
+      <span class="text-meta" style="color:var(--color-text-primary); font-weight:500;">Annual</span>
+      <span class="save-badge">Save 20%</span>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="pricing-grid">
+      <div class="card plan-card">
+        <p class="plan-name">Starter</p>
+        <div class="plan-price"><span class="amount font-tabular" data-monthly="$299" data-annual="$239">$299</span><span class="period" data-period-label>/month</span></div>
+        <p class="plan-desc">For teams just centralizing their first few feedback sources.</p>
+        <ul class="plan-features">
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 3 sources connected</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> 5,000 feedback items / month</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Theme clustering & prioritization</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> 3 seats</li>
+        </ul>
+        <a class="btn btn-secondary btn-block" href="signup.html">Start free trial</a>
+      </div>
+
+      <div class="card plan-card is-featured">
+        <span class="plan-badge">Most popular</span>
+        <p class="plan-name">Growth</p>
+        <div class="plan-price"><span class="amount font-tabular" data-monthly="$899" data-annual="$719">$899</span><span class="period" data-period-label>/month</span></div>
+        <p class="plan-desc">For product teams ready to close the loop with customers.</p>
+        <ul class="plan-features">
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 8 sources connected</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> 25,000 feedback items / month</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Roadmap linking + Loop notifications</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Churn-risk theme alerts</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> 10 seats</li>
+        </ul>
+        <a class="btn btn-primary btn-block" href="signup.html">Start free trial</a>
+      </div>
+
+      <div class="card plan-card">
+        <p class="plan-name">Scale</p>
+        <div class="plan-price"><span class="amount font-tabular" data-monthly="$2,400" data-annual="$1,920">$2,400</span><span class="period" data-period-label>/month</span></div>
+        <p class="plan-desc">For multi-team orgs reporting up to leadership and the board.</p>
+        <ul class="plan-features">
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited sources & volume</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom taxonomies</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Executive & board reporting exports</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> SSO, audit logs, dedicated CSM</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited seats</li>
+        </ul>
+        <a class="btn btn-secondary btn-block" href="signup.html">Start free trial</a>
+      </div>
+
+      <div class="card plan-card">
+        <p class="plan-name">Enterprise</p>
+        <div class="plan-price"><span class="amount">Custom</span></div>
+        <p class="plan-desc">For multi-product organizations with custom security needs.</p>
+        <ul class="plan-features">
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Multi-brand support</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom data residency review</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> API access for data warehouse sync</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7L5.5 10.5L12 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Dedicated onboarding engineer</li>
+        </ul>
+        <a class="btn btn-secondary btn-block" href="#contact">Talk to sales</a>
+      </div>
+    </div>
+
+    <table class="compare-table">
+      <thead>
+        <tr><th>Feature</th><th>Starter</th><th>Growth</th><th>Scale</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Connected sources</td><td>3</td><td>8</td><td>Unlimited</td></tr>
+        <tr><td>Feedback items / month</td><td class="font-tabular">5,000</td><td class="font-tabular">25,000</td><td>Unlimited</td></tr>
+        <tr><td>Roadmap linking</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Loop notifications</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Board-ready reporting</td><td>—</td><td>—</td><td>✓</td></tr>
+        <tr><td>SSO & audit logs</td><td>—</td><td>—</td><td>✓</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section container" style="max-width:720px;">
+    <h2 class="text-center" style="margin-bottom: var(--space-4);">Questions</h2>
+    <details class="faq-item">
+      <summary>What counts as a "feedback item"?</summary>
+      <p>Any single inbound piece of customer signal — a support ticket, a sales call transcript, a review, or a survey response — counts as one item toward your monthly volume.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I change plans later?</summary>
+      <p>Yes. Upgrades apply immediately; downgrades take effect at the start of your next billing cycle.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Do you offer nonprofit or startup discounts?</summary>
+      <p>Early-stage startups under 20 employees can request a discounted Starter rate — reach out from the contact page.</p>
+    </details>
+  </section>
+
+  <section class="container section-tight" id="contact">
+    <div class="cta-band">
+      <h2>Have a larger team or custom needs?</h2>
+      <p>Talk to our sales team about Enterprise pricing.</p>
+      <a class="btn btn-primary" href="index.html#customers">Talk to sales</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span class="brand">EchoFrame</span>
+        <p class="text-secondary">Every product decision, traceable to a real customer need.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="index.html#product">Inbox</a></li>
+          <li><a href="index.html#product">Themes</a></li>
+          <li><a href="integrations.html">Integrations</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EchoFrame, Inc.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookie preferences</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
