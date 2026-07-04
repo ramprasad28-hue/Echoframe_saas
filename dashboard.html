@@ -14,8 +14,19 @@
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/premium.css">
 </head>
 <body>
+
+<div class="page-loader" data-page-loader aria-hidden="true">
+  <div class="loader-mark">
+    <svg viewBox="0 0 44 44">
+      <circle class="loader-ring" cx="22" cy="22" r="19"></circle>
+      <circle class="loader-arc" cx="22" cy="22" r="19"></circle>
+    </svg>
+  </div>
+</div>
+<div class="cursor-glow" data-cursor-glow aria-hidden="true"></div>
 
 <div class="app-shell">
 
@@ -101,22 +112,22 @@
       <div class="grid grid-4" style="margin-bottom: var(--space-3);">
         <div class="card stat-card">
           <p class="stat-label">New feedback (7d)</p>
-          <p class="stat-value font-tabular">312</p>
+          <p class="stat-value font-tabular"><span data-count-to="312">312</span></p>
           <p class="stat-trend up">↑ 18% vs last week</p>
         </div>
         <div class="card stat-card">
           <p class="stat-label">Active themes</p>
-          <p class="stat-value font-tabular">24</p>
+          <p class="stat-value font-tabular"><span data-count-to="24">24</span></p>
           <p class="stat-trend up">↑ 3 new this week</p>
         </div>
         <div class="card stat-card">
           <p class="stat-label">Linked to roadmap</p>
-          <p class="stat-value font-tabular">9</p>
+          <p class="stat-value font-tabular"><span data-count-to="9">9</span></p>
           <p class="stat-trend up">↑ 2 this month</p>
         </div>
         <div class="card stat-card">
           <p class="stat-label">Churn-risk themes</p>
-          <p class="stat-value font-tabular">3</p>
+          <p class="stat-value font-tabular"><span data-count-to="3">3</span></p>
           <p class="stat-trend down">↑ 1 vs last week</p>
         </div>
       </div>
@@ -168,6 +179,29 @@
               <button class="btn btn-primary btn-sm" data-toast-trigger>Send Loop</button>
             </div>
           </div>
+
+          <div class="card widget" data-animate-in>
+            <div class="row between" style="margin-bottom: var(--space-2);">
+              <h2 class="widget-title" style="margin:0;">AI processing pipeline</h2>
+              <span class="badge badge-accent badge-live">Live</span>
+            </div>
+            <div class="pipeline-row">
+              <div class="pipeline-head"><span>Ingesting new items</span><span class="font-tabular">100%</span></div>
+              <div class="pipeline-track"><div class="pipeline-fill" style="--pct:100%;"></div></div>
+            </div>
+            <div class="pipeline-row">
+              <div class="pipeline-head"><span>Clustering into themes</span><span class="font-tabular">82%</span></div>
+              <div class="pipeline-track"><div class="pipeline-fill" style="--pct:82%;"></div></div>
+            </div>
+            <div class="pipeline-row">
+              <div class="pipeline-head"><span>Scoring &amp; prioritizing</span><span class="font-tabular">64%</span></div>
+              <div class="pipeline-track"><div class="pipeline-fill is-warning" style="--pct:64%;"></div></div>
+            </div>
+            <div class="pipeline-row">
+              <div class="pipeline-head"><span>Synced to roadmap</span><span class="font-tabular">37%</span></div>
+              <div class="pipeline-track"><div class="pipeline-fill is-positive" style="--pct:37%;"></div></div>
+            </div>
+          </div>
         </div>
 
         <div class="stack gap-3">
@@ -177,6 +211,18 @@
             <div class="rank-row"><span class="dot dot-positive"></span><span class="rank-name">Gong</span><span class="text-secondary font-tabular">14m ago</span></div>
             <div class="rank-row"><span class="dot dot-warning"></span><span class="rank-name">Salesforce</span><span class="text-secondary font-tabular">Reauth needed</span></div>
             <div class="rank-row"><span class="dot dot-positive"></span><span class="rank-name">Typeform</span><span class="text-secondary font-tabular">1h ago</span></div>
+          </div>
+
+          <div class="card widget sparkline-widget" data-animate-in>
+            <div class="sparkline-head">
+              <h2 class="widget-title" style="margin:0;">Feedback volume (7d)</h2>
+              <span class="stat-trend up">↑ 18%</span>
+            </div>
+            <span class="sparkline-value font-tabular">312</span>
+            <svg viewBox="0 0 240 56" preserveAspectRatio="none">
+              <path class="sparkline-area" d="M0,44 L34,38 L68,40 L102,26 L136,30 L170,16 L204,20 L240,6 L240,56 L0,56 Z"></path>
+              <path class="sparkline-line" d="M0,44 L34,38 L68,40 L102,26 L136,30 L170,16 L204,20 L240,6"></path>
+            </svg>
           </div>
 
           <div class="card widget">
@@ -230,5 +276,6 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/premium.js"></script>
 </body>
 </html>

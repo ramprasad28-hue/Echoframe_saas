@@ -13,8 +13,19 @@
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/premium.css">
 </head>
 <body>
+
+<div class="page-loader" data-page-loader aria-hidden="true">
+  <div class="loader-mark">
+    <svg viewBox="0 0 44 44">
+      <circle class="loader-ring" cx="22" cy="22" r="19"></circle>
+      <circle class="loader-arc" cx="22" cy="22" r="19"></circle>
+    </svg>
+  </div>
+</div>
+<div class="cursor-glow" data-cursor-glow aria-hidden="true"></div>
 
 <div class="auth-shell">
   <div class="auth-card">
@@ -61,5 +72,6 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/premium.js"></script>
 </body>
 </html>

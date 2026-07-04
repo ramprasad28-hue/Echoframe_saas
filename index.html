@@ -16,8 +16,19 @@
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/premium.css">
 </head>
 <body>
+
+<div class="page-loader" data-page-loader aria-hidden="true">
+  <div class="loader-mark">
+    <svg viewBox="0 0 44 44">
+      <circle class="loader-ring" cx="22" cy="22" r="19"></circle>
+      <circle class="loader-arc" cx="22" cy="22" r="19"></circle>
+    </svg>
+  </div>
+</div>
+<div class="cursor-glow" data-cursor-glow aria-hidden="true"></div>
 
 <a class="sr-only" href="#main">Skip to content</a>
 
@@ -110,7 +121,7 @@
       <span class="eyebrow">The problem</span>
       <h2>Your customers are already telling you what to build.</h2>
     </div>
-    <div class="grid grid-3">
+    <div class="grid grid-3 reveal-stagger">
       <div class="card problem-card">
         <div class="icon-tile">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 6L10 10L17 6" stroke="currentColor" stroke-width="1.5"/></svg>
@@ -131,6 +142,49 @@
         </div>
         <h3>Decisions get made on gut feeling.</h3>
         <p>Roadmaps end up shaped by whoever complained loudest last week.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AI WORKFLOW VISUALIZATION ============ -->
+  <section class="section-tight container">
+    <div class="section-head center">
+      <span class="eyebrow">Under the hood</span>
+      <h2>One AI pipeline, four channels in.</h2>
+    </div>
+    <div class="ai-flow reveal">
+      <div class="ai-flow-track">
+        <div class="ai-flow-node">
+          <div class="ai-flow-icon">
+            <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 6L10 10L17 6" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <span class="ai-flow-label">Raw feedback</span>
+          <span class="ai-flow-sub">Tickets · calls · reviews · surveys</span>
+        </div>
+        <div class="ai-flow-connector"></div>
+        <div class="ai-flow-node is-core">
+          <div class="ai-flow-icon">
+            <svg width="24" height="24" viewBox="0 0 20 20" fill="none"><path d="M10 2L11.8 7.4L17 9L11.8 10.6L10 16L8.2 10.6L3 9L8.2 7.4L10 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" fill="currentColor" fill-opacity="0.15"/></svg>
+          </div>
+          <span class="ai-flow-label">AI engine</span>
+          <span class="ai-flow-sub">Cluster · rank · sentiment</span>
+        </div>
+        <div class="ai-flow-connector"></div>
+        <div class="ai-flow-node">
+          <div class="ai-flow-icon">
+            <svg width="22" height="22" viewBox="0 0 18 18" fill="none"><circle cx="6" cy="12" r="2" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="6" r="2" stroke="currentColor" stroke-width="1.4"/><path d="M7.5 10.5L10.5 7.5" stroke="currentColor" stroke-width="1.4"/></svg>
+          </div>
+          <span class="ai-flow-label">Ranked themes</span>
+          <span class="ai-flow-sub">By volume &amp; ARR at risk</span>
+        </div>
+        <div class="ai-flow-connector"></div>
+        <div class="ai-flow-node">
+          <div class="ai-flow-icon">
+            <svg width="22" height="22" viewBox="0 0 18 18" fill="none"><path d="M3 14V6L9 3L15 6V14L9 17L3 14Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="ai-flow-label">Roadmap</span>
+          <span class="ai-flow-sub">Linked in Linear or Jira</span>
+        </div>
       </div>
     </div>
   </section>
@@ -213,7 +267,7 @@
   <!-- ============ INTEGRATIONS STRIP ============ -->
   <section class="section-tight container text-center">
     <span class="eyebrow">Works with what you already use</span>
-    <div class="grid grid-4" style="margin-top: var(--space-3);">
+    <div class="grid grid-4 reveal-stagger" style="margin-top: var(--space-3);">
       <div class="card text-center"><p style="margin:0; font-weight:500; color:var(--color-text-primary);">Zendesk</p></div>
       <div class="card text-center"><p style="margin:0; font-weight:500; color:var(--color-text-primary);">Gong</p></div>
       <div class="card text-center"><p style="margin:0; font-weight:500; color:var(--color-text-primary);">Slack</p></div>
@@ -228,9 +282,9 @@
       <span class="eyebrow">Customer proof</span>
       <h2>Teams that stopped guessing.</h2>
     </div>
-    <div class="grid grid-2 gap-3">
+    <div class="grid grid-2 gap-3 reveal-stagger">
       <div class="card case-study">
-        <div class="case-stat font-tabular">28%</div>
+        <div class="case-stat font-tabular"><span data-count-to="28" data-count-suffix="%">28%</span></div>
         <div>
           <p style="color:var(--color-text-primary); font-weight:500; margin-bottom:4px;">Reduction in quarterly churn</p>
           <p class="text-meta">Fernbank connected support and sales call data, then shipped fixes for their top three churn-risk themes within one quarter.</p>
@@ -252,7 +306,7 @@
       <span class="eyebrow">Pricing</span>
       <h2>Plans that scale with your feedback volume.</h2>
     </div>
-    <div class="grid grid-3">
+    <div class="grid grid-3 reveal-stagger">
       <div class="card">
         <p class="plan-name">Starter</p>
         <div class="plan-price"><span class="amount font-tabular">$299</span><span class="period">/month</span></div>
@@ -331,5 +385,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/premium.js"></script>
 </body>
 </html>
